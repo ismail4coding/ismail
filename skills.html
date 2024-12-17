@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - MD. ISMAIL</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1a1a1a;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 0; /* Remove margin */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+            transform: scale(1.1);
+        }
+
+        nav ul li a.active {
+            border-bottom: 3px solid #00bcd4;
+            padding-bottom: 5px;
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 130px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #00bcd4, #0288d1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .skills-title-box {
+            background-color: #004680;
+            color: white;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .skills-title-box h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .skill-box {
+            background-color: #e7f0f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .skill-box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .skill-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #004680;
+        }
+
+        .skill-box p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .skills-title-box h2 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-box {
+                width: 90%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <!-- Skills Title Box -->
+        <div class="skills-title-box">
+            <h2>Skills</h2>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+            <!-- Skill 1: Python -->
+            <div class="skill-box">
+                <img src="python-logo.png" alt="Python Logo"> <!-- Add your Python logo image here -->
+                <h3>Python</h3>
+                <p>Experienced with Python for data analysis, machine learning, and automation.</p>
+            </div>
+
+            <!-- Skill 2: SQL -->
+            <div class="skill-box">
+                <img src="sql-logo.png" alt="SQL Logo"> <!-- Add your SQL logo image here -->
+                <h3>SQL</h3>
+                <p>Skilled in querying databases, performing data manipulation, and optimizing queries.</p>
+            </div>
+
+            <!-- Skill 3: Excel -->
+            <div class="skill-box">
+                <img src="excel-logo.png" alt="Excel Logo"> <!-- Add your Excel logo image here -->
+                <h3>Excel</h3>
+                <p>Advanced Excel skills, including formulas, data cleaning, and pivot tables.</p>
+            </div>
+
+            <!-- Skill 4: Power BI -->
+            <div class="skill-box">
+                <img src="powerbi-logo.png" alt="Power BI Logo"> <!-- Add your Power BI logo image here -->
+                <h3>Power BI</h3>
+                <p>Skilled in creating interactive dashboards and reports using Power BI.</p>
+            </div>
+
+            <!-- Skill 5: Tableau -->
+            <div class="skill-box">
+                <img src="tableau-logo.png" alt="Tableau Logo"> <!-- Add your Tableau logo image here -->
+                <h3>Tableau</h3>
+                <p>Experienced in building visualizations and data-driven insights using Tableau.</p>
+            </div>
+
+            <!-- Skill 6: Communication -->
+            <div class="skill-box">
+                <img src="communication-logo.png" alt="Communication Logo"> <!-- Add your Communication logo image here -->
+                <h3>Communication</h3>
+                <p>Effective at conveying complex data insights in a clear and concise manner.</p>
+            </div>
+
+            <!-- Skill 7: Presentation -->
+            <div class="skill-box">
+                <img src="presentation-logo.png" alt="Presentation Logo"> <!-- Add your Presentation logo image here -->
+                <h3>Presentation</h3>
+                <p>Proficient in presenting data findings and insights to various audiences.</p>
+            </div>
+
+            <!-- Skill 8: Storytelling -->
+            <div class="skill-box">
+                <img src="storytelling-logo.png" alt="Storytelling Logo"> <!-- Add your Storytelling logo image here -->
+                <h3>Storytelling</h3>
+                <p>Able to tell a compelling story with data, driving business decisions and actions.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
